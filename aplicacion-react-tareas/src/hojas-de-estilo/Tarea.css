@@ -1,0 +1,46 @@
+.tarea-contenedor {
+  width: 500px;
+  min-height: 65px;
+  background-color: #1b1b32;
+  margin: 5px 0;
+  padding: 8px 15px 8px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 7px;
+  border: 1px solid white;
+  cursor: pointer;
+}
+
+.tarea-contenedor:nth-child(3n+1) { /*Es una pseudoclase, se traduce como el n-simo hijo. Lo que está dentro de paréntesis quiere decir que cada tres elementos se va a repetir esa secuencia de colores*/
+  background-color: #1b1b32;
+}
+
+.tarea-contenedor:nth-child(3n+2) {
+  background-color: #2a2a40;
+}
+
+.tarea-contenedor:nth-child(3n+3) {
+  background-color: #3b3b4f;
+}
+
+.tarea-texto {
+  width: 100%;
+  height: 100%;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  overflow-wrap: anywere; /*Permite cortar el texto y que siga hacia abajo, en el caso de ser un texto largo*/
+}
+
+.terea-icono {
+  width: 25px;
+  height: 25px;
+  margin: 5px;
+}
+
+.tarea-contenedor.completada { /*Es una clase formada por dos clases "tarea-contenedor" y "completada", por eso va el punto en el medio*/
+  background-color: #5a0aa7;
+  text-decoration: line-through;
+}
+

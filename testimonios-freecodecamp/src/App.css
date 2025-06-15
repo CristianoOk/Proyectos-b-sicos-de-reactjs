@@ -1,0 +1,34 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  font-size: 18px;
+  background-color: #f5f6f7;
+}
+h1 {
+  max-width: 940px;
+  font-size: 2.5em; /*"em", es un factor relativo al tamño de la letra de su contenedor, digamos que si su contenedor tiene 10px entonces este alor sera 2.5 veces 10px. Así se lo puede hacer relativo en lugar de fijo.*/
+  font-family:Lato, sans-serif ; /*El tipo de letra va a ser "lato", y en el caso de que el naegador no reconzca este tipo, entonces como respado está sans-serif (otro tipo de letra)*/
+  font-weight: 700;
+  line-height: 1.1;
+  margin: 40px 0;
+}
+.App {
+  min-height: 100vh; /*La altura minima de la aplicación va a ser de 100vh (100 views x height), esto permite que se adapte a la altura de la aplicación; la app como minimo tomará el 100% de la pantalla verticalmente */
+  display: flex; /*sirve para definir cómo se van a ubicar los distintos elemento dentro del contenedor*/
+  flex-wrap: wrap; /*si un elemento toma todo el ancho del ccontenedor, entonces los otros elementos van a ubicarse en la siguiente linea o abajo de este*/
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.contenedor-principal {
+  min-height: 600px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
